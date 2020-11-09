@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Snackbar.make(findViewById(R.id.fab), "Settings snackbar", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         }
 
         if (id == R.id.action_first) {
